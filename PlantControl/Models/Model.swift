@@ -9,9 +9,11 @@
 struct Plant {
     let name: String
     let latinName: String
+    let plantOfDay: String
     
     var fullName: String {
         "\(name) \(latinName)"
+        
         
     }
     
