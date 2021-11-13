@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Rf1-Ea-zd8">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="WZX-39-QOB">
+            <objects>
+                <tableViewController id="boH-R0-PPX" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="0U2-wb-vfr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.76446841461489901" green="0.74152825112944587" blue="0.62861028038772127" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="dw4-XF-VsE">
+                                <rect key="frame" x="0.0" y="44.5" width="320" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dw4-XF-VsE" id="uuv-aD-rFI">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="boH-R0-PPX" id="l11-sY-3Xz"/>
+                            <outlet property="delegate" destination="boH-R0-PPX" id="9nH-av-Zfm"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Plants" image="doc.plaintext" catalog="system" id="DNd-jM-5UD"/>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="fCy-ag-Cel"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JHP-L9-MOS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="878" y="94"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="x8O-ls-XgO">
+            <objects>
+                <viewController id="fxP-t0-2Mc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="62V-ij-I9u">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="fET-C2-7ed">
+                                <rect key="frame" x="20" y="178" width="280" height="195"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="51" translatesAutoresizingMaskIntoConstraints="NO" id="URD-V8-XDT">
+                                        <rect key="frame" x="0.0" y="0.0" width="190" height="195"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Watering the plant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geQ-VO-sxK">
+                                                <rect key="frame" x="0.0" y="0.0" width="190" height="35"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plant feeding" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gge-SW-As1">
+                                                <rect key="frame" x="0.0" y="86" width="190" height="29"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="29" id="b07-lr-qOa"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plant transplant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9y-6U-5Ji">
+                                                <rect key="frame" x="0.0" y="166" width="190" height="29"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="29" id="0N2-4Z-SCQ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="188" id="Q9L-tg-5C2"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="51" translatesAutoresizingMaskIntoConstraints="NO" id="tp5-TV-bK7">
+                                        <rect key="frame" x="230" y="0.0" width="50" height="195"/>
+                                        <subviews>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M2E-fp-9Uu">
+                                                <rect key="frame" x="0.0" y="0.0" width="52" height="31"/>
+                                                <color key="onTintColor" red="0.39816150466655459" green="0.61928612294823226" blue="0.31931792861572439" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </switch>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z99-Sc-mz0">
+                                                <rect key="frame" x="0.0" y="82" width="52" height="31"/>
+                                                <color key="onTintColor" red="0.3981615047" green="0.61928612289999996" blue="0.31931792860000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </switch>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fij-2G-4F7">
+                                                <rect key="frame" x="0.0" y="164" width="52" height="31"/>
+                                                <color key="onTintColor" red="0.3981615047" green="0.61928612289999996" blue="0.31931792860000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </switch>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="49" id="cns-nc-Zh5"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="w35-gl-Yjn"/>
+                        <color key="backgroundColor" red="0.76446841460000003" green="0.74152825109999998" blue="0.6286102804" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="fET-C2-7ed" firstAttribute="top" secondItem="w35-gl-Yjn" secondAttribute="top" constant="82" id="7k0-2J-2mj"/>
+                            <constraint firstItem="fET-C2-7ed" firstAttribute="leading" secondItem="w35-gl-Yjn" secondAttribute="leading" constant="20" id="cbS-x6-xdB"/>
+                            <constraint firstItem="w35-gl-Yjn" firstAttribute="trailing" secondItem="fET-C2-7ed" secondAttribute="trailing" constant="20" id="tgg-09-L3M"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Wq4-Zm-KdP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2lL-ij-BdE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="176.81159420289856" y="1514.7321428571429"/>
+        </scene>
+        <!--Plant care-->
+        <scene sceneID="XTS-IH-dLG">
+            <objects>
+                <tableViewController id="GHr-Fd-Woh" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="eke-8U-jpg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.76446841460000003" green="0.74152825109999998" blue="0.6286102804" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="OJn-ep-TZ8">
+                                <rect key="frame" x="0.0" y="44.5" width="320" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OJn-ep-TZ8" id="zdx-AH-XCX">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="fxP-t0-2Mc" kind="show" id="le0-kg-wzo"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="GHr-Fd-Woh" id="pgz-vl-6dT"/>
+                            <outlet property="delegate" destination="GHr-Fd-Woh" id="dVL-x1-vJ0"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Plant care" image="eyeglasses" catalog="system" id="USL-zk-NBh"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EEb-mH-sZk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="177" y="802"/>
+        </scene>
+        <!--Plant of the day-->
+        <scene sceneID="O0s-9A-InU">
+            <objects>
+                <viewController id="wNR-OD-TWZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mbd-G4-Ez0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="EoB-9p-coM">
+                                <rect key="frame" x="53" y="87.5" width="214" height="305"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FnR-KR-aJi">
+                                        <rect key="frame" x="0.0" y="0.0" width="214" height="285"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ThR-1f-Cqi">
+                                        <rect key="frame" x="0.0" y="305" width="214" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yoV-aD-omu"/>
+                        <color key="backgroundColor" red="0.76446841460000003" green="0.74152825109999998" blue="0.6286102804" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="yoV-aD-omu" firstAttribute="bottom" secondItem="EoB-9p-coM" secondAttribute="bottom" constant="38.5" id="1J5-f4-T9w"/>
+                            <constraint firstItem="EoB-9p-coM" firstAttribute="centerY" secondItem="Mbd-G4-Ez0" secondAttribute="centerY" id="itr-r9-lCA"/>
+                            <constraint firstItem="EoB-9p-coM" firstAttribute="centerX" secondItem="Mbd-G4-Ez0" secondAttribute="centerX" id="jrV-LL-uid"/>
+                            <constraint firstItem="EoB-9p-coM" firstAttribute="leading" secondItem="yoV-aD-omu" secondAttribute="leading" constant="53" id="l5V-RS-3AB"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Plant of the day" image="sun.max.circle" catalog="system" id="hJ0-Jz-ELI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i48-Um-fLu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="927.536231884058" y="801.5625"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pGJ-r5-XzE">
+            <objects>
+                <navigationController id="Rf1-Ea-zd8" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="5JX-QC-Lca">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="NCr-kN-Vqe" kind="relationship" relationship="rootViewController" id="hU6-UJ-Yov"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Uw-H3-qWb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-516" y="95"/>
+        </scene>
+        <!--List of plants-->
+        <scene sceneID="GBX-MT-M7L">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="NCr-kN-Vqe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="List of plants" id="I5g-RZ-jKL"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sN5-i0-ewX">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="boH-R0-PPX" kind="relationship" relationship="viewControllers" id="F3S-rZ-mDP"/>
+                        <segue destination="GHr-Fd-Woh" kind="relationship" relationship="viewControllers" id="kSe-WZ-vGv"/>
+                        <segue destination="wNR-OD-TWZ" kind="relationship" relationship="viewControllers" id="Prf-Ij-ZKP"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yEM-p9-h8o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="176.81159420289856" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="doc.plaintext" catalog="system" width="115" height="128"/>
+        <image name="eyeglasses" catalog="system" width="128" height="54"/>
+        <image name="sun.max.circle" catalog="system" width="128" height="121"/>
+    </resources>
+</document>
